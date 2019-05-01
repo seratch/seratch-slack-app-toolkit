@@ -1,0 +1,32 @@
+{
+  "name": "seratch-slack-app-toolkit",
+  "version": "0.0.1",
+  "description": "Toolkit to build Slack Apps in TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seratch/seratch-slack-app-toolkit.git"
+  },
+  "keywords": [
+    "slack",
+    "typescript"
+  ],
+  "author": "Kazuhiro Sera @seratch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seratch/seratch-slack-app-toolkit/issues"
+  },
+  "homepage": "https://github.com/seratch/seratch-slack-app-toolkit#readme",
+  "devDependencies": {
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "seratch-slack-types": "^0.1.1"
+  }
+}
