@@ -1,6 +1,6 @@
 {
   "name": "seratch-slack-app-toolkit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Toolkit to build Slack Apps in TypeScript",
   "main": "dist/index.js",
   "scripts": {
