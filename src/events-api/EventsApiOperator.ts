@@ -24,7 +24,7 @@ export class EventsApiOperator {
     if (payload.type === 'url_verification') {
       // https://api.slack.com/events/url_verification
       if (payload.challenge) {
-        response.status(200).write(payload.challenge);
+        response.status(200).header("Content-Type", "text/plain").send(payload.challenge);
       } else {
         // invalid payload
         response.status(400).json({ ok: false });
