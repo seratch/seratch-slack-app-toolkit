@@ -22,9 +22,11 @@ export class EventsApiOperator {
 
   dispatch(payload: EventsApiPayload, request: Request, response: Response) {
     if (payload.type === 'url_verification') {
-      if (payload.event) {
-        response.status(200).write(payload.event.challenge);
+      // https://api.slack.com/events/url_verification
+      if (payload.challenge) {
+        response.status(200).write(payload.challenge);
       } else {
+        // invalid payload
         response.status(400).json({ ok: false });
       }
     } else if (payload.type && payload.type === 'event_callback') {

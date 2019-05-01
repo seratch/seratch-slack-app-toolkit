@@ -7,6 +7,7 @@ export interface EventsApiPayload {
   authed_users?: string[];
   event_id?: string;
   event_time?: number;
+  challenge?: string; // url_verification
 }
 
 export interface Event {
